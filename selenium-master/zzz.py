@@ -194,9 +194,13 @@
 
 # print(f(6))
 
-def f(n):
-    if n == 10:
-        return 1
-    else:
-        return (f(n+1)+1)+2
-print(f(3))
+# def f(n):
+#     if n == 10:
+#         return 1
+#     else:
+#         return (f(n+1)+1)+2
+# print(f(3))
+
+print(int(232 / 10 % 10))
+print(int((23.2)%10))
+print(int(33.8888888888))

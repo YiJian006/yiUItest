@@ -158,20 +158,20 @@
 
 # print(d)
 
-from requests import options
-from selenium import webdriver
-from selenium.webdriver import ChromeOptions,ActionChains
-from time import sleep
+# from requests import options
+# from selenium import webdriver
+# from selenium.webdriver import ChromeOptions,ActionChains
+# from time import sleep
 
-d = webdriver.Chrome()
-d.get("https://pos.meituan.com/web/rms-account#/login")
-d.maximize_window()
-d.switch_to.frame(d.find_element_by_tag_name('iframe'))
-d.find_element_by_xpath("//*[@id='app']/div/div[1]/a[2]").click()
-d.find_element_by_id("account").send_keys("15882476647")
-d.find_element_by_id("password").send_keys("yijian123789")
-d.find_element_by_xpath("//*[@id='app']/div/div[2]/form/button").click()
-sleep(1)
+# d = webdriver.Chrome()
+# d.get("https://pos.meituan.com/web/rms-account#/login")
+# d.maximize_window()
+# d.switch_to.frame(d.find_element_by_tag_name('iframe'))
+# d.find_element_by_xpath("//*[@id='app']/div/div[1]/a[2]").click()
+# d.find_element_by_id("account").send_keys("15882476647")
+# d.find_element_by_id("password").send_keys("yijian123789")
+# d.find_element_by_xpath("//*[@id='app']/div/div[2]/form/button").click()
+# sleep(1)
 
 # # 添加参数
 # options = ChromeOptions()
@@ -184,3 +184,19 @@ sleep(1)
 
 # d.close()
 # 希望能通过 8890
+
+# 斐波拉契数列
+# def f(n):
+#     if n <=2:
+#         return 1
+#     else:
+#         return f(n-1) + f(n-2)
+
+# print(f(6))
+
+def f(n):
+    if n == 10:
+        return 1
+    else:
+        return (f(n+1)+1)+2
+print(f(3))

@@ -1,0 +1,20 @@
+2020-11-29 19:51:16,033 - 注册测试 - INFO - input data:name:ceshi001,pwd:qwer,suc:2,assert:账号密码输入错误
+2020-11-29 19:51:16,046 - 注册测试 - ERROR - 用例执行失败，原因：Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="username"]"}
+  (Session info: chrome=87.0.4280.66)
+
+2020-11-29 19:51:27,913 - 注册测试 - INFO - input data:name:yijian123,pwd:1256kk,suc:2,assert:账号不存在
+2020-11-29 19:51:27,925 - 注册测试 - ERROR - 用例执行失败，原因：Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="username"]"}
+  (Session info: chrome=87.0.4280.66)
+
+2020-11-29 19:55:11,611 - 注册测试 - INFO - input data:name:ceshi001,pwd:qwer,suc:2,assert:账号密码输入错误
+2020-11-29 19:55:14,004 - 注册测试 - ERROR - 用例执行失败，原因：list index out of range
+2020-11-29 19:55:26,088 - 注册测试 - INFO - input data:name:yijian123,pwd:1256kk,suc:2,assert:账号不存在
+2020-11-29 19:55:27,448 - 注册测试 - ERROR - 用例执行失败，原因：list index out of range
+2020-11-29 19:56:44,603 - 注册测试 - INFO - input data:name:ceshi001,pwd:qwer,suc:2,assert:账号密码输入错误
+2020-11-29 19:56:46,241 - 注册测试 - ERROR - 用例执行失败，原因：list index out of range
+2020-11-29 19:56:57,803 - 注册测试 - INFO - input data:name:yijian123,pwd:1256kk,suc:2,assert:账号不存在
+2020-11-29 19:56:59,049 - 注册测试 - ERROR - 用例执行失败，原因：list index out of range
+2020-11-29 19:57:49,230 - 注册测试 - INFO - input data:name:ceshi001,pwd:qwer,suc:2,assert:账号密码输入错误
+2020-11-29 19:57:50,677 - 注册测试 - ERROR - 用例执行失败，原因：list index out of range
+2020-11-29 19:58:02,212 - 注册测试 - INFO - input data:name:yijian123,pwd:1256kk,suc:2,assert:账号不存在
+2020-11-29 19:58:03,521 - 注册测试 - ERROR - 用例执行失败，原因：list index out of range

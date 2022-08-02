@@ -1,0 +1,13 @@
+2020-11-29 21:02:42,663 - 注册测试 - INFO - input data:name:ceshi001,pwd:qwer,suc:2,assert:账号密码输入错误
+2020-11-29 21:02:47,837 - 注册测试 - ERROR - 用例执行失败，原因：invalid literal for int() with base 10: '点选此处产生'
+2020-11-29 21:02:59,562 - 注册测试 - INFO - input data:name:yijian123,pwd:1256kk,suc:2,assert:账号不存在
+2020-11-29 21:07:15,225 - 注册测试 - INFO - input data:name:ceshi001,pwd:qwer,suc:2,assert:账号密码输入错误
+2020-11-29 21:07:30,831 - 注册测试 - INFO - input data:name:yijian123,pwd:1256kk,suc:2,assert:账号不存在
+2020-11-29 21:09:06,963 - 注册测试 - INFO - input data:name:ceshi001,pwd:qwer,suc:2,assert:账号密码输入错误
+2020-11-29 21:09:22,725 - 注册测试 - INFO - input data:name:yijian123,pwd:1256kk,suc:2,assert:账号不存在
+2020-11-29 21:29:34,449 - 注册测试 - INFO - input data:name:ceshi001,pwd:qwer,suc:2,assert:账号密码输入错误
+2020-11-29 21:29:38,504 - 注册测试 - ERROR - 用例执行失败，原因：invalid literal for int() with base 10: '点选此处产生'
+2020-11-29 21:29:50,531 - 注册测试 - INFO - input data:name:yijian123,pwd:1256kk,suc:2,assert:账号不存在
+2020-11-29 21:37:40,827 - 注册测试 - INFO - input data:name:ceshi001,pwd:qwer,suc:2,assert:账号密码输入错误
+2020-11-29 21:37:56,419 - 注册测试 - INFO - input data:name:yijian123,pwd:1256kk,suc:2,assert:账号不存在
+2020-11-29 21:38:12,645 - 注册测试 - INFO - input data:name:ceshi0001,pwd:qwer123,suc:1,assert:EG彩票

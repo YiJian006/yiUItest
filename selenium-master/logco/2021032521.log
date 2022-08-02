@@ -1,0 +1,6 @@
+2021-03-25 21:58:24,839 - 注册测试 - INFO - input data:name:ceshi001,pwd:qwer,suc:2,assert:账号密码输入错误
+2021-03-25 21:58:26,434 - 注册测试 - ERROR - 用例执行失败，原因：[Errno 2] No such file or directory: 'C:\\\\Users\\\\yijian\\Desktop\\\\selenium-master\\\\img\\\\aa.png'
+2021-03-25 21:58:38,212 - 注册测试 - INFO - input data:name:yijian123,pwd:1256kk,suc:2,assert:账号不存在
+2021-03-25 21:58:39,738 - 注册测试 - ERROR - 用例执行失败，原因：[Errno 2] No such file or directory: 'C:\\\\Users\\\\yijian\\Desktop\\\\selenium-master\\\\img\\\\aa.png'
+2021-03-25 21:58:52,579 - 注册测试 - INFO - input data:name:ceshi0001,pwd:qwer123,suc:1,assert:EG彩票
+2021-03-25 21:58:54,128 - 注册测试 - ERROR - 用例执行失败，原因：[Errno 2] No such file or directory: 'C:\\\\Users\\\\yijian\\Desktop\\\\selenium-master\\\\img\\\\aa.png'

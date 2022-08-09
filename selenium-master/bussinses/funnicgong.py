@@ -1,3 +1,4 @@
+from tkinter import Button
 import yaml,os
 path = os.getcwd()
 # from selenium import webdriver
@@ -8,34 +9,10 @@ from PIL import Image
 from PIL import ImageEnhance
 from aip import AipOcr # pip install baidu-aip
 from time import sleep
+from selenium.webdriver import ChromeOptions,ActionChains
 
-# 验证码
-class yzm:
-    def __init__(self):
-        self.APP_ID = '16838310'  # 替换为实际申请值
-        self.API_KEY = '8GuIfzz8pSmg8x02GQNBWGyt'  # 替换为实际申请值
-        self.SECRET_KEY = 'MoEeNimMbs9IB8bBB6SXrgjoogmpIzKI'
 
-    def getyzm(self):
-        coderange = (576,390,576+120,390+40) # 验证码坐标
-        i = Image.open(r"C:\\Users\\yijian\Desktop\\selenium-master\\img\\aa.png") # 打开截图
-        frame4 = i.crop(coderange)  #使用Image的crop函数，从截图中再次截取我们需要的区域
-        frame4.save(r"C:\\Users\\yijian\Desktop\\selenium-master\\img\\aa.png")    #保存截图
-        i2 = Image.open(r"C:\\Users\\yijian\Desktop\\selenium-master\\img\\aa.png")  #打开截图
-        imgry = i2.convert('L')   #图像加强，二值化，PIL中有九种不同模式。分别为1，L，P，RGB，RGBA，CMYK，YCbCr，I，F。L为灰度图像
-        sharpness = ImageEnhance.Contrast(imgry) #对比度增强
-        i3 = sharpness.enhance(3.0)  #3.0为图像的饱和度
-        i3.save(r"C:\\Users\\yijian\Desktop\\selenium-master\\img\\image_code.png")
-        img = open(r"C:\\Users\\yijian\\Desktop\\selenium-master\\img\\image_code.png","rb").read()
-        result = AipOcr(self.APP_ID, self.API_KEY, self.SECRET_KEY).webImage(img)
-        print(result)
-        yz = int(result['words_result'][0]['words'])
-        if isinstance(yz,int):
-            if yz < 1000:
-                return None
-            return yz
-        else:
-            return None
+
 
 # 登录模块封装
 class Login_tes:
@@ -47,39 +24,44 @@ class Login_tes:
         self.data = yaml.load(self.file)
         self.file.close()
         self.lo_url = self.data["login"].get('url')
-        self.denglu = self.data["login"].get('denglu')
-        self.username = self.data["login"].get('name')
+        self.denglu1 = self.data["login"].get('denglu1')
+        self.denglu2 = self.data["login"].get('denglu2')
+        self.username = self.data["login"].get('username')
         self.password = self.data["login"].get('password')
-        self.code = self.data["login"].get("code")
+        self.button = self.data["login"].get("button")
         self.lo_err = self.data["login"].get('login_err')
         self.driber.get(self.lo_url)
         self.driber.maximize_window()
-        self.yz = yzm()
+        
 
-    def login(self,suc,name,password):
+    def login(self,suc,username,password):
         try:
             self.driber.implicitly_wait(10)
-            self.driber.find_element_by_name(self.username).send_keys(name)
-            self.driber.find_element_by_name(self.password).send_keys(password)
+            self.driber.find_element_by_xpath(self.denglu1).click()
+            self.driber.find_element_by_xpath(self.denglu2).click()
+            self.driber.find_element_by_xpath(self.username).send_keys(username)
+            self.driber.find_element_by_xpath(self.password).send_keys(password)
+            self.driber.find_element_by_xpath(self.button).click()
+
+            # 通过css定位滑动坐标
+            slider = self.driber.find_element_by_id("nc_1_n1z")
+            sleep(1)
+            action = ActionChains(self.driber)
+            # 长按鼠标
+            action.click_and_hold(slider)
+            # 偏移量（F12中查看）
+            action.move_by_offset(260, 0)
+            # 释放鼠标
+            action.release()
+            # 执行以上操作
+            action.perform()
             self.driber.implicitly_wait(10)
             sleep(1)
             self.driber.save_screenshot(r"C:\\Users\\yijian\Desktop\\selenium-master\\img\\aa.png")
             self.driber.implicitly_wait(10)
-            self.yzm = self.yz.getyzm()
-            if self.yzm == None:
-                self.driber.find_element_by_name(self.code).send_keys(9999)
-                self.driber.find_element_by_css_selector(self.denglu).click()
-                self.driber.implicitly_wait(10)
-                self.login_err = self.driber.find_element_by_xpath(self.lo_err).text 
-                L = [None,self.login_err]
-                return L
-            self.driber.implicitly_wait(10)
-            self.driber.find_element_by_name(self.code).send_keys(self.yzm)
-            self.driber.implicitly_wait(10)
-            self.driber.find_element_by_css_selector(self.denglu).click()
             if suc == "1":
-                self.login_su = self.driber.title
-                # self.login_su = self.driber.find_element_by_class_name(self.lo_err).text
+                # self.login_su = self.driber.title
+                self.login_su = self.driber.current_url
                 return self.login_su
             if suc == "2":
                 self.driber.implicitly_wait(5)

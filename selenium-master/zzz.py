@@ -158,20 +158,22 @@
 
 # print(d)
 
-# from requests import options
-# from selenium import webdriver
-# from selenium.webdriver import ChromeOptions,ActionChains
-# from time import sleep
+from requests import options
+from selenium import webdriver
+from selenium.webdriver import ChromeOptions,ActionChains
+from time import sleep
 
-# d = webdriver.Chrome()
-# d.get("https://pos.meituan.com/web/rms-account#/login")
-# d.maximize_window()
+d = webdriver.Chrome()
+d.get("https://blog.csdn.net/weixin_44233133?type=blog")
+d.maximize_window()
 # d.switch_to.frame(d.find_element_by_tag_name('iframe'))
-# d.find_element_by_xpath("//*[@id='app']/div/div[1]/a[2]").click()
-# d.find_element_by_id("account").send_keys("15882476647")
-# d.find_element_by_id("password").send_keys("yijian123789")
-# d.find_element_by_xpath("//*[@id='app']/div/div[2]/form/button").click()
-# sleep(1)
+d.find_element_by_xpath("//*[@id='csdn-toolbar']/div/div/div[3]/div/div[1]/a").click()
+d.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[2]/div[1]/div[1]/div[1]/span[4]").click()
+d.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[2]/div[1]/div/div[2]/div/div[1]/div/input").send_keys("15882476647")
+d.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[2]/div[1]/div/div[2]/div/div[2]/div/input").send_keys("yijian123789")
+d.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[2]/div[1]/div/div[2]/div/div[4]/button").click()
+s = d.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[2]/div[1]/div/div[2]/div/div[3]/span").text
+print(s)
 
 # # 添加参数
 # options = ChromeOptions()
@@ -201,6 +203,14 @@
 #         return (f(n+1)+1)+2
 # print(f(3))
 
-print(int(232 / 10 % 10))
-print(int((23.2)%10))
-print(int(33.8888888888))
+# print(int(232 / 10 % 10))
+# print(int((23.2)%10))
+# print(int(33.8888888888))
+
+# def f(n):
+#     if n == 1:
+#         return 1
+#     else:
+#         return n*f(n-1)
+
+# print(f(3))

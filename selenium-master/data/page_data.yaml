@@ -1,10 +1,12 @@
 login:
-    url: "http://eg77777.com/login"
-    denglu: "[type='submit']"
-    name: "username"
-    password: "password"
-    code: "code"
-    login_err: "//body//div[@class='v-snack__wrapper error']"
+    url: "https://blog.csdn.net/weixin_44233133?type=blog"
+    denglu1: "//*[@id='csdn-toolbar']/div/div/div[3]/div/div[1]/a"
+    denglu2: "/html/body/div[2]/div/div[2]/div[2]/div[1]/div[1]/div[1]/span[4]"
+    username: "/html/body/div[2]/div/div[2]/div[2]/div[1]/div/div[2]/div/div[1]/div/input"
+    password: "/html/body/div[2]/div/div[2]/div[2]/div[1]/div/div[2]/div/div[2]/div/input"
+    button: "/html/body/div[2]/div/div[2]/div[2]/div[1]/div/div[2]/div/div[4]/button"
+    # code: "code"
+    login_err: "/html/body/div[2]/div/div[2]/div[2]/div[1]/div/div[2]/div/div[3]/span"
 # zhuce:
 #     url: "http://127.0.0.1:8000/"
 #     zhuc: "注册"

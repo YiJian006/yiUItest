@@ -1,0 +1,26 @@
+2022-08-08 22:15:17,905 - 注册测试 - INFO - input data:name:ceshi001,pwd:qwer,suc:2,assert:账号密码输入错误
+2022-08-08 22:15:21,333 - 注册测试 - ERROR - 用例执行失败，原因：'Login_tes' object has no attribute 'lo_err'
+2022-08-08 22:15:58,019 - 注册测试 - INFO - input data:name:yijian123,pwd:1256kk,suc:2,assert:账号不存在
+2022-08-08 22:16:01,581 - 注册测试 - ERROR - 用例执行失败，原因：'Login_tes' object has no attribute 'lo_err'
+2022-08-08 22:16:37,528 - 注册测试 - INFO - input data:name:ceshi0001,pwd:qwer123,suc:1,assert:EG彩票
+2022-08-08 22:27:43,846 - 注册测试 - INFO - input data:name:15882476647,pwd:qwer,suc:2,assert:用户名或密码错误
+2022-08-08 22:27:47,937 - 注册测试 - ERROR - 用例执行失败，原因：'Login_tes' object has no attribute 'lo_err'
+2022-08-08 22:28:02,786 - 注册测试 - INFO - input data:name:15882476647,pwd:1256kk,suc:2,assert:用户名或密码错误
+2022-08-08 22:28:06,475 - 注册测试 - ERROR - 用例执行失败，原因：'Login_tes' object has no attribute 'lo_err'
+2022-08-08 22:28:24,639 - 注册测试 - INFO - input data:name:15882476647,pwd:yijian123789,suc:1,assert:https://blog.csdn.net/Elyod/article/details/115712602
+2022-08-08 22:30:05,847 - 注册测试 - INFO - input data:name:15882476647,pwd:qwer,suc:2,assert:用户名或密码错误
+2022-08-08 22:30:09,565 - 注册测试 - ERROR - 用例执行失败，原因：'Login_tes' object has no attribute 'lo_err'
+2022-08-08 22:30:45,674 - 注册测试 - INFO - input data:name:15882476647,pwd:1256kk,suc:2,assert:用户名或密码错误
+2022-08-08 22:30:49,498 - 注册测试 - ERROR - 用例执行失败，原因：'Login_tes' object has no attribute 'lo_err'
+2022-08-08 22:31:03,829 - 注册测试 - INFO - input data:name:15882476647,pwd:yijian123789,suc:1,assert:https://blog.csdn.net/Elyod/article/details/115712602
+2022-08-08 22:43:49,632 - 注册测试 - INFO - input data:name:15882476647,pwd:qwer,suc:2,assert:用户名或密码错误
+2022-08-08 22:43:53,746 - 注册测试 - ERROR - 用例执行失败，原因：'Login_tes' object has no attribute 'lo_err'
+2022-08-08 22:44:08,642 - 注册测试 - INFO - input data:name:15882476647,pwd:1256kk,suc:2,assert:用户名或密码错误
+2022-08-08 22:44:12,165 - 注册测试 - ERROR - 用例执行失败，原因：'Login_tes' object has no attribute 'lo_err'
+2022-08-08 22:44:26,206 - 注册测试 - INFO - input data:name:15882476647,pwd:yijian123789,suc:1,assert:https://blog.csdn.net/Elyod/article/details/115712602
+2022-08-08 22:50:46,187 - 注册测试 - INFO - input data:name:15882476647,pwd:qwer,suc:2,assert:用户名或密码错误
+2022-08-08 22:50:49,291 - 注册测试 - ERROR - 用例执行失败，原因：move_to requires a WebElement
+2022-08-08 22:51:03,384 - 注册测试 - INFO - input data:name:15882476647,pwd:1256kk,suc:2,assert:用户名或密码错误
+2022-08-08 22:51:06,206 - 注册测试 - ERROR - 用例执行失败，原因：move_to requires a WebElement
+2022-08-08 22:51:19,181 - 注册测试 - INFO - input data:name:15882476647,pwd:yijian123789,suc:1,assert:https://blog.csdn.net/Elyod/article/details/115712602
+2022-08-08 22:51:23,789 - 注册测试 - ERROR - 用例执行失败，原因：move_to requires a WebElement
